@@ -72,10 +72,11 @@ let spaceShuttle = new Spacecraft('Determination', 17500);
 
 // Move your output statements from part 3 here. Update the template literals use the
 // instance of the class.
-console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToMars)} days to get to Mars.`);
+// console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToMars)} days to get to Mars.`);
 
-console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} days to the Moon.`);
+// console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} days to the Moon.`);
 console.log(spaceShuttle.printDaysToLocation(new SpaceLocation('Mars', kilometersToMars)));
+
 console.log(spaceShuttle.printDaysToLocation(new SpaceLocation('the Moon', kilometersToTheMoon)));
 
 // Part 5: Export and Import the SpaceLocation Class
