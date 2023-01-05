@@ -31,7 +31,7 @@ function getDaysToLocation(kilometersAway: number): number {
     let hours: number = milesAway / speedMph;
     return hours / 24;
 }
-console.log(`${spacecraftName} is ${getDaysToLocation} to Mars.`)
+console.log(`${spacecraftName} is ${getDaysToLocation(kilometersToMars)} to Mars.`)
 // Move your output statement from part 2 here. Update the template literal to call
 // the function and print the outputs for a Mars trip and a moon trip.
 
