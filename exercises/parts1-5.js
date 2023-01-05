@@ -21,7 +21,7 @@ function getDaysToLocation(kilometersAway) {
     var hours = milesAway / speedMph;
     return hours / 24;
 }
-console.log("".concat(spacecraftName, " is ").concat(getDaysToLocation, " to Mars."));
+console.log("".concat(spacecraftName, " is ").concat(getDaysToLocation(kilometersToMars), " to Mars."));
 // Move your output statement from part 2 here. Update the template literal to call
 // the function and print the outputs for a Mars trip and a moon trip.
 // Part 4: Create a Spacecraft Class
