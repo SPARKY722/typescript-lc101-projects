@@ -3,11 +3,21 @@
 
 
 // Part 1: Declare (5) Variables With Type
-
+let spacecraftName: string = "Determination";
+let speedMph: number = 17500;
+let kilometersToMars: number = 225000000;
+let kilometersToTheMoon: number = 384400;
+let milePerKilometer: number = 0.621;
 
 
 // Part 2: Print Days to Mars
-
+let milesToMars: number;
+milesToMars = kilometersToMars * milePerKilometer;
+let hoursToMars: number;
+hoursToMars = milesToMars / speedMph;
+let daysToMars: number;
+daysToMars = hoursToMars / 24;
+console.log(`${spacecraftName}` + `${daysToMars}`);
 
 
 // Code an output statement here (use a template literal):
