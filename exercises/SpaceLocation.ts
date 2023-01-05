@@ -8,4 +8,5 @@ export class SpaceLocation {
       this.name = name;
       this.kilometersAway = kilometersAway;
    }
+   
 }

@@ -35,11 +35,11 @@ let kilometersToTheMoon: number = 384400;
 // Move your output statement from part 2 here. Update the template literal to call
 // the function and print the outputs for a Mars trip and a moon trip.
 
-function getDaysToMoon(kilometersToTheMoon: number): number {
-    let milesAwayFromMoon: number = kilometersToTheMoon * milePerKilometer;
-    let hoursToMoon: number = milesAwayFromMoon / speedMph;
-    return hoursToMoon / 24;
-}
+// function getDaysToMoon(kilometersToTheMoon: number): number {
+//     let milesAwayFromMoon: number = kilometersToTheMoon * milePerKilometer;
+//     let hoursToMoon: number = milesAwayFromMoon / speedMph;
+//     return hoursToMoon / 24;
+// }
 //console.log(`${spacecraftName} is ${getDaysToMoon(kilometersToTheMoon)} days to the Moon.`);
 
 
@@ -60,6 +60,9 @@ class Spacecraft {
         let hoursToMars: number = milesAway / this.speedMph;
         return hoursToMars / 24;
     }
+    printDaysToLocation(location: SpaceLocation) {
+   console.log(`${this.name} would take ${this.getDaysToLocation(location.kilometersAway)} days to get to ${location.name}.`);
+}
 }
 
 
@@ -72,7 +75,8 @@ let spaceShuttle = new Spacecraft('Determination', 17500);
 console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToMars)} days to get to Mars.`);
 
 console.log(`${spaceShuttle.name} would take ${spaceShuttle.getDaysToLocation(kilometersToTheMoon)} days to the Moon.`);
-
+console.log(spaceShuttle.printDaysToLocation(new SpaceLocation('Mars', kilometersToMars)));
+console.log(spaceShuttle.printDaysToLocation(new SpaceLocation('the Moon', kilometersToTheMoon)));
 
 // Part 5: Export and Import the SpaceLocation Class
 // Add the required import statement BEFORE the part 1 concent.
